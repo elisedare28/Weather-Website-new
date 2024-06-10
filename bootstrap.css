@@ -762,14 +762,13 @@ body, html {
   height: 100vh; 
   margin: 0; 
   padding: 0; 
-  overflow: hidden; 
+  overflow: auto; 
 }
 #weather{
   float: left;
   width: 50%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -782,7 +781,6 @@ body, html {
 #charts {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -794,10 +792,27 @@ body, html {
 #buttons {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   margin-bottom: 5px;
 }
 
+@media (max-width: 700px){
+  #weather {
+    width: 100%;
+    top: 0;
+
+  }
+  #buttons {
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+  }
+  #charts {
+    z-index: 2;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+  }
+}
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
