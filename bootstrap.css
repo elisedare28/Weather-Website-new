@@ -759,7 +759,7 @@ progress {
   margin-left: auto;
 }
 body, html {
-  height: 100%; 
+  height: 100vh; 
   margin: 0; 
   padding: 0; 
   overflow: hidden; 
@@ -792,6 +792,7 @@ body, html {
 #buttons {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 576px) {
