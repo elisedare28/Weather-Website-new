@@ -769,6 +769,7 @@ body, html {
   width: 50%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -781,6 +782,7 @@ body, html {
 #charts {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -792,6 +794,7 @@ body, html {
 #buttons {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 5px;
 }
 
