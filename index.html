@@ -1,0 +1,59 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="bootstrap.css">
+
+    <title>WEATHER FORECAST</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WEATHER WEBSITE</a>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search" id="search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class ="container-fluid" id="weather">
+      <div class="card bg-light mb-3" style="min-width: 20rem; min-height: 18rem;">
+        <div class="card-header text-center"><h2 id="city"></h2></div>
+          <div class="card-body">
+              <h5 class="card-title" id="temperature"></h5>
+              <br>
+              <h5 id="description"></h5>
+              <br>
+              <h5 id="humidity"></h5>
+              <div class="d-flex justify-content-center">
+                <img src="" class="iconurl">
+              </div>
+          </div>
+        </div>
+      </div>
+
+  <div id="charts">
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+
+
+  <div class="container-fluid" id="buttons">
+      
+    <button class="btn btn-lg btn-primary" type="button" id="delhi" name="a">NEW DELHI</button>
+
+    <button class="btn btn-lg btn-primary" type="button" id="london" name="b">LONDON</button>
+    
+    <button class="btn btn-lg btn-primary" type="button" id="dc" name="c">WASHINGTON DC</button>
+    
+  </div>
+
+
+
+  <script type="text/javascript" src="output.js"></script>
+</body>
+</html>
